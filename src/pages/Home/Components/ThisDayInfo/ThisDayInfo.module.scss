@@ -1,27 +1,48 @@
-.header{
-    display: flex;
-    justify-content: space-between;
+@import "/home/feelpainbitc/weaherlooking/src/vaiables.scss";
+
+
+.this_day_info{
+    position: relative;
+    padding: 40px;
+    max-width: 750px;
     width: 100%;
+    background:$lite-background;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
 }
-.wrapper{
+
+.this_day_item{
+    position: relative;
     display: flex;
     align-items: center;
-}
-.logo{
-    margin-right: 20px;
-    svg{
-        width: 65px;
-        height: 65px;
+    margin-bottom: 25px;
+    &:last-of-type{
+        margin-bottom: 0;
     }
-    
 }
-.title{
-    font-size: 25px;
-    line-height: 30.48px;
-    color:#4793FF;
-    text-transform: uppercase;
-    font-weight: 700;
+    .indicator,.indicator_name{
+       margin-right: 20px;
+    }
+        .indicator{
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 1px 4px 10px -1px rgba(71,147,255,0.2);
+        border-radius: 50%;
 }
-.change_theme{
-    margin-right: 20px;
-}
+        .indicator_name{
+            font-size: 14px;
+            color: $base-color;
+
+        }
+        .indicator_value{
+            font-size: 14px;
+            color:$lite-color;
+        }
+    .cloud_img{
+        position: absolute;
+        top:0;
+        right: 0;
+    }

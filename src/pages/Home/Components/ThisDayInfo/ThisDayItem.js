@@ -8,14 +8,14 @@ import { IndicatorSvgSelector } from '../../../../assets/icons/indicators/Indica
 **/
 
 export const ThisDayItem= ({item}) => {
-
+  const {icon_id,name,value}=item;
   return(
-    <div className={s.item}>
+    <div className={s.this_day_item}>
         <div className={s.indicator}>
-            <IndicatorSvgSelector id={item.icon_id}/>
+            <IndicatorSvgSelector id={icon_id}/>
         </div>
-        <div className={s.indicator_name}>{item.name}</div>
-        <div className={s.indicator_value}>{item.value}</div>
+        <div className={s.indicator_name}>{name}</div>
+        <div className={s.indicator_value}>{value}</div>
     </div>
    )
 

@@ -12,8 +12,10 @@ import s from "./Home.module.scss";
 export const  Home= (props) => {
   return(
     <div className={s.home}>
+      <div className={s.wrapper}>
         <ThisDay/>
         <ThisDayInfo/>
+        </div>
     </div>
    )
 

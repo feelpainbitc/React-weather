@@ -10,9 +10,9 @@ import s from "./Header.module.scss";
 **/
 
 const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'city1', label: 'Molodechno' },
+    { value: 'city2', label: 'Moscow' },
+    { value: 'city3', label: 'Grodno' }
   ]
 
 export const  Header= (props) => {
