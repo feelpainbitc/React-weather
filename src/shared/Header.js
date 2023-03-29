@@ -17,6 +17,21 @@ const options = [
 
 export const  Header= (props) => {
 
+ const colorStyles={
+    control:(styles)=>({
+        ...styles,
+        backgroundColor:0 ? '#4F4F4F' : 'rgba(71,147,255,0.2)',
+        width:'194px',
+        height:'37px',
+        border:'none',
+        borderRadius:'10px'
+        }),
+        singleValue:(styles)=>({
+            ...styles,
+            color:0 ? '#fff' : '#000',
+            }),
+ }
+
   return(
     <div className={s.header}>
         <div className={s.wrapper}>
@@ -31,7 +46,10 @@ export const  Header= (props) => {
             <div className={s.change_theme}>
             <GlobalSvgSelector id="change-theme"/>
             </div>
-            <Select options={options} />
+            <Select
+             defaultValue={options[2]}
+             styles={colorStyles}
+             options={options}/>
         </div>
     </div>
    )

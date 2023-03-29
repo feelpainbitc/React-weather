@@ -2,7 +2,7 @@ import React from 'react';
 import { GlobalSvgSelector } from '../../../../assets/icons/global/GlobalSvgSelector';
 import s from "./ThisDayInfo.module.scss";
 import { ThisDayItem } from './ThisDayItem';
-import cloud from "/home/feelpainbitc/weaherlooking/src/assets/images/cloud.jpg";
+import cloud from "/home/feelpainbitc/weaherlooking/src/assets/images/image11.png";
 
 /**
 * @author
