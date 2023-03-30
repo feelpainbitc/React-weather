@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
 import { GlobalSvgSelector } from '../assets/icons/global/GlobalSvgSelector';
+import { storage } from '../localStorage/Storage';
 import s from "./Header.module.scss";
 
 
@@ -18,7 +19,7 @@ const options = [
 
 export const  Header= (props) => {
 
-    const[theme,setTheme]=useState('light');
+    const[theme,setTheme]=useState(storage.getItem('theme') || 'light');
 
  const colorStyles={
     control:(styles)=>({
@@ -40,6 +41,7 @@ export const  Header= (props) => {
 
  function changeTheme(){
     setTheme(theme === 'light' ? 'dark' : 'light');
+    storage.setItem('theme',theme);
  }
 
  useEffect(()=>{
